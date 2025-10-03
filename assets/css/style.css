@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+::selection {
+    background-color: goldenrod;
+}
+
+
+.container {
+    width: 100%;
+    /* height: 100vh; */
+    background-image: url(./images/WhatsApp\ Image\ 2025-09-25\ at\ 14.49.30_66975c0f.jpg);
+    background-size: 100% 100%;
+}
+
+.container .cont {
+    width: 80%;
+    background-color: rgba(250, 235, 215, 0.449);
+    margin: 0 auto;
+    padding: 1%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom: 3px solid burlywood;
+}
+
+.container .Title1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5%;
+}
+
+.container .Title1 .title1 {
+    margin-top: 1.5%;
+    color: darkblue;
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container .Title2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .Title2 .title2 {
+    margin-top: 1.5%;
+    color: darkblue;
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container .City {
+    width: 17%;
+    margin: 2% auto;
+}
+
+.container .City h2 {
+    font-size: 60px;
+    color: darkblue;
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    background-color: rgba(250, 235, 215, 0.511);
+    border-radius: 20px;
+    border: 3px solid burlywood;
+    text-shadow: 2px 2px 2px darkblue;
+}
+
+.container .select {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+}
+
+.container .select select {
+    width: 13%;
+    height: 7vh;
+    background-color: bisque;
+    color: darkblue;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 800;
+    border-radius: 20px;
+    outline: none;
+    list-style: decimal;
+}
+
+.container .threeDivs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    gap: 6px;
+}
+
+.container .threeDivs .miladi,
+.container .threeDivs .day,
+.container .threeDivs .hijri {
+    width: 30%;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 228, 196, 0.649);
+    color: darkblue;
+    border-radius: 20px;
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container .prayerTime {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+    gap: 6px;
+}
+
+.container .prayerTime .Fajr,
+.container .prayerTime .Shroq,
+.container .prayerTime .Dhuhr,
+.container .prayerTime .Asr,
+.container .prayerTime .Maghrib,
+.container .prayerTime .Isha {
+    width: 16%;
+    height: 26vh;
+    background-color: rgba(255, 228, 196, 0.501);
+    border: 3px solid burlywood;
+    color: darkblue;
+    border-radius: 20px;
+    margin-bottom: 1.4%;
+}
+
+.container .prayerTime .Fajr p ,
+.container .prayerTime .Shroq p ,
+.container .prayerTime .Dhuhr p ,
+.container .prayerTime .Asr p ,
+.container .prayerTime .Maghrib p ,
+.container .prayerTime .Isha p  {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    border-bottom: 3px solid burlywood;
+    background-color: blanchedalmond;
+    font-size: 23px;
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container .prayerTime .Fajr h2 ,
+.container .prayerTime .Shroq h2 ,
+.container .prayerTime .Dhuhr h2 ,
+.container .prayerTime .Asr h2 ,
+.container .prayerTime .Maghrib h2 ,
+.container .prayerTime .Isha h2  {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 75px;
+    font-family: "Aref Ruqaa", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+
+
+@media ( max-width: 1160px ){
+    .container .prayerTime{
+        flex-wrap: wrap;
+    }
+    .container .prayerTime .Fajr,
+    .container .prayerTime .Shroq,
+    .container .prayerTime .Dhuhr,
+    .container .prayerTime .Asr,
+    .container .prayerTime .Maghrib,
+    .container .prayerTime .Isha{
+        width: 23%;
+    }
+}
+
+
+@media ( max-width: 830px ){
+    .container .prayerTime{
+        flex-wrap: wrap;
+    }
+    .container .threeDivs{
+        flex-wrap: wrap;
+    }
+    .container .threeDivs .miladi,
+    .container .threeDivs .day,
+    .container .threeDivs .hijri {
+    width: 48%;
+    }
+    .container .prayerTime .Fajr,
+    .container .prayerTime .Shroq,
+    .container .prayerTime .Dhuhr,
+    .container .prayerTime .Asr,
+    .container .prayerTime .Maghrib,
+    .container .prayerTime .Isha{
+        width: 25%;
+    }
+}
+
+
+
+@media ( max-width: 730px ){
+    .container .prayerTime{
+        flex-wrap: wrap;
+    }
+    .container .threeDivs{
+        flex-wrap: wrap;
+    }
+    .container .City {
+    width: 26%;
+    }
+    .container .select select{
+        width: 20%;
+    }
+    .container .threeDivs .miladi,
+    .container .threeDivs .day,
+    .container .threeDivs .hijri {
+    width: 50%;
+    }
+    .container .prayerTime .Fajr,
+    .container .prayerTime .Shroq,
+    .container .prayerTime .Dhuhr,
+    .container .prayerTime .Asr,
+    .container .prayerTime .Maghrib,
+    .container .prayerTime .Isha{
+        width: 40%;
+    }
+}
+
+
+@media ( max-width: 580px ){
+    .container .prayerTime{
+        flex-wrap: wrap;
+    }
+    .container .threeDivs{
+        flex-wrap: wrap;
+    }
+    .container .City {
+    width: 40%;
+    }
+    .container .select select{
+        width: 40%;
+    }
+    .container .threeDivs .miladi,
+    .container .threeDivs .day,
+    .container .threeDivs .hijri {
+    width: 60%;
+    }
+    .container .prayerTime .Fajr,
+    .container .prayerTime .Shroq,
+    .container .prayerTime .Dhuhr,
+    .container .prayerTime .Asr,
+    .container .prayerTime .Maghrib,
+    .container .prayerTime .Isha{
+        width: 48%;
+    }
+}
+
+
+@media ( max-width: 427px ){
+    .container .prayerTime{
+        flex-wrap: wrap;
+    }
+    .container .threeDivs{
+        flex-wrap: wrap;
+    }
+    .container .City {
+    width: 60%;
+    }
+    .container .select select{
+        width: 50%;
+    }
+    .container .threeDivs .miladi,
+    .container .threeDivs .day,
+    .container .threeDivs .hijri {
+    width: 70%;
+    }
+    .container .prayerTime .Fajr,
+    .container .prayerTime .Shroq,
+    .container .prayerTime .Dhuhr,
+    .container .prayerTime .Asr,
+    .container .prayerTime .Maghrib,
+    .container .prayerTime .Isha{
+        width: 70%;
+    }
+}
+
+
+@media ( max-width: 365px ){
+    .container .threeDivs{
+        flex-wrap: wrap;
+    }
+    .container .City {
+    width: 80%;
+    }
+    .container .select select{
+        width: 70%;
+    }
+    .container .threeDivs .miladi,
+    .container .threeDivs .day,
+    .container .threeDivs .hijri {
+    width: 90%;
+    }
+    .container .prayerTime .Fajr,
+    .container .prayerTime .Shroq,
+    .container .prayerTime .Dhuhr,
+    .container .prayerTime .Asr,
+    .container .prayerTime .Maghrib,
+    .container .prayerTime .Isha{
+        width: 70%;
+    }
+}
